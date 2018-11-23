@@ -1,4 +1,5 @@
-with open("display.py", "w") as writer :
+nameofthegame=input("Nom du jeu : ")
+with open("display_"+nameofthegame+".py", "w") as writer :
     writer.write("""
 
 from tkinter import *
@@ -20,6 +21,10 @@ Entry_size.insert(0, 'inserer la thaille de la grille')
 Entry_size.grid(row=1, column=4, sticky=W, padx=10)
 Label(root, text="Theme:").grid(row=0, column=0, sticky=W, padx=10)
 
+ai_choice=IntVar()
+Entry_ai = Checkbutton(root, text="IA", variable=ai_choice, offvalue=False, onvalue=True)
+Entry_ai.grid(row=2, column=0, sticky=W, padx=10)
+
 Com = StringVar()
 Com.set("ATTENTION REGARDEZ ICI EN JOUANT")
 Commentaire = Entry(root, text="ATTENTION REGARDEZ ICI EN JOUANT", textvariable=Com, width=50)
@@ -37,7 +42,7 @@ def modif_commentaire(text):
 command = StringVar()
 
 
-def Afficher_bouton(dict):
+def display_button(dict):
     global Button_1, command
     for key, value in dict.items():
         Text1 = StringVar()
@@ -67,6 +72,9 @@ def display_grid(A, root):
             label.grid(row=i + 6, column=j + 6)
             H.append(label)
     return (H, L)
+    
+def set_ai_choice():
+    return ai_choice.get()
 """)
-    with open("human_2048.py", "r") as reader :
+    with open("human_"+nameofthegame+".py", "r") as reader :
         writer.write(reader.read())
