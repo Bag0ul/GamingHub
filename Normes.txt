@@ -6,18 +6,18 @@ from display_[nameofthegame] import *
 import ai_[nameofthegame]
 
 def play():
-  ai = set_ai_choice()
-  dic_button={...}
-  display_button(dic_button)
-  size=set_size_grid()
-  .
-  .
-  .
+    ai = display_[nameofthegame].set_ai_choice()
+    dic_button={...}
+    display_[nameofthegame].display_button(dic_button)
+    size=display_[nameofthegame].set_size_grid()
+    .
+    .
+    .
 
-Start_game=Button(root, text="Commencer le jeu",command=play)
-Start_game.grid(row= 3,column=0,sticky=W)
+Start_game=display_[nameofthegame].Button(root, text="Commencer le jeu",command=play)
+Start_game.grid(row= 3,column=0,sticky=display_[nameofthegame].W)
 
-root.mainloop()
+display_[nameofthegame].root.mainloop()
 
 ------------------------------------------------
 
@@ -39,17 +39,17 @@ your game is installed, you can launch main_[nameofthegame].py
 if ia :
   command = ia_[nameofthegame].set_[order](grid, dic_values)
 else :
-  command = set_[order]()
+  command = display_[nameofthegame].set_[order]()
 
 ------------------------------------------------
 
 --- showing the game is made as following : ---
 
-display_grid([your grid], root)
+display_[nameofthegame].display_grid([your grid], root)
 
 --- showing commentary is made as following : ---
 
-modif_commentaire("...")
+display_[nameofthegame].modif_commentaire("...")
   
 ------------------------------------------------
 
@@ -65,7 +65,7 @@ dic_grid = {int_tile:str_image, ...}
 
 dic_orders = {str_order:[str_image, (x,y)], ...}
 dic_orders_init = {str_order:[str_image, (x,y)], ...} #
-the call function is set_[order]()
+the call function is display_[nameofthegame].set_[order]()
 
 ------------------------------------------------
 
@@ -75,7 +75,7 @@ Do not concern the grid (score, life points, turn, ...)
 """
 
 dic_values = {str_value:"sentence"}
-the call function is get_[value]()
+the call function is display_[nameofthegame].get_[value]()
 
 ------------------------------------------------
 
