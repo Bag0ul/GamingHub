@@ -1,32 +1,55 @@
 ------------------------------------------------
 
-The main must be named "play(ia)"
+The play function in the main must be named play() and start as following :
+
+from display import *
+import ai_[nameofthegame]
+
+def play():
+  ai = set_ai_choice()
+  dic_button={...}
+  display_button(dic_button)
+  size=set_size_grid()
+  .
+  .
+  .
+
+Start_game=Button(root, text="Commencer le jeu",command=play)
+Start_game.grid(row= 3,column=0,sticky=W)
+
+root.mainloop()
+
+------------------------------------------------
+
+Your orders must be written in a file named human_[nameofthegame].py
+
+------------------------------------------------
+
+Game installation :
+
+- put all your files in a folder (main_[nameofthegame].py and human_[nameofthegame].py at least)
+- launch game_setup.py
+
+your game is installed, you can launch main_[nameofthegame].py
 
 ------------------------------------------------
 
 --- Each time it waits instruction, it must be written as following : ---
 
 if ia :
-  command = ia_nameofthegame.set_order(grid, dic_values)
+  command = ia_nameofthegame.set_[order](grid, dic_values)
 else :
-  command = human_nameofthegame.set_order()
+  command = set_[order]()
 
 ------------------------------------------------
 
 --- showing the game is made as following : ---
 
-import display
-""" At the beginning """
-if ia :
-  """ call every init orders """
-else :
-  display.show_init(dic_orders_init)
-display.show_orders()
+display_grid([your grid], root)
 
-display.grid(grid, dic_grid)
-""" during the play(), when u want to refresh the grid """
-  ...
-  display.grid(grid, dic_grid)
+--- showing commentary is made as following : ---
+
+modif_commentaire("...")
   
 ------------------------------------------------
 
@@ -58,4 +81,4 @@ the call function is get_value()
 
 ---Button---
 
-dic_buttons = {str_button:[(x,y), value]}
+dic_buttons = {str_button:((x,y), value)}
