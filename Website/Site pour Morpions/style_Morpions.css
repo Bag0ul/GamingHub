@@ -1,0 +1,71 @@
+#Principe,#Calcul,#Scores
+{
+	align-content:center;
+	display:flex;
+	justify-content:space-around;
+}
+.premier,.deuxieme
+{
+	margin-left:20px;
+	margin-right: 35px;
+	font-family:Verdana;
+	font-size:24px;
+	text-align:justify;
+}
+
+.p
+{
+	text-align:justify;
+	margin-right:20px;
+	margin-left: 20px;
+	font-family:Verdana;
+	font-size:20px;
+}
+#photo
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+body
+{
+	background:url("fond.jpg") fixed ;
+	font-family:Verdana;
+}
+.par_score,.Les
+{
+	margin-left: 20px;
+	text-align:justify;
+	margin-right:255px;
+	font-family:Verdana;;
+	font-size:20px;
+}
+.Titre
+{
+	font-size:28px;
+	color:grey;
+	font-weight:bold;
+	text-decoration:underline;
+}
+h1
+{
+	font-family:Verdana; ;
+	font-weight:bold;
+	font-size:40px;
+	color:white;
+	text-decoration:underline;
+	text-align:center;
+}
+footer
+{
+	border-top:solid black 2px;
+	margin-top:50px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	font-family:Verdana;
+}
+figure
+{
+	text-align:center;
+}

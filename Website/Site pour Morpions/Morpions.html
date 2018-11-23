@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meca charset="utf-8"/>
+		<link rel="stylesheet" href="style_Morpions.css"/>
+		<title>Jouez au Morpion</title>
+	</head>
+	<header>
+		<h1 id="h1">Jouez au Morpion</h1>
+	</header>
+	<body>
+		<figure>
+			<img src="image_Morpions." alt="Notre Morpion" title="Voici notre Morpion"/>
+			<figcaption>Voici notre Morpion</figcaption>
+		</figure>
+		<p><span class="Titre">Principe du jeu:</span><br/>
+			<div id="Principe">
+				<div class="premier"><br/>Le but de ce jeu de grille est éventuellement de gagner en arrivant à aligner 3 signe de <em>"x"</em> ou de <em>"o"</em> dans la grille. Il se peut qu'aucun des deux joueurs ne présentent une suite alignée de signes, dans ce cas, le jeu décrète qu'il y a égalité.</div>
+				<div class="deuxieme"><br/>Pour que le joueur puisse placer un symbole de <em>"x"</em> ou de <em>"o"</em>, il faut que cette case soit vide, autrement il ne peut rien n'y mettre.</div>
+				<div><video src="Morpions.mp4" controls></video></div>
+			</div>
+		</p>
+		<p><span class="Titre">Calcul des scores:</span><br/>
+			<div id = "Calcul">
+				<div class="p">Pour calculer votre score finale, il faut d'une part gagner et d'autres part chaque victoire correspond à un point.Plus vous gagnez et plus vous avez donc de points.</div>
+				<div id="photo">
+					<div><img src="Premier_score.png" alt="Premier_score" title="Ici le joueur atteint l'objecti.f"/></div>
+					<div><img src="Second_score.png" alt="Second_score" title="Ici le joueur n'atteint pas l'objectif."/></div>
+				</div>
+				<div class="p">Dans le premier cas, le joueur atteint l'objectif c'est à dire qu'il a pu aligner 3 symboles identiques dans la grille. Dans ce cas sa victoire compte pour un point.
+				Dans le second cas, les joueurs ou le joueur face à l'ordinateur arrivent(resp.e) à une égalite, leurs(resp.sa) partie compte pour 0.</div>
+			</div>
+		</p>
+		<p><span class="Titre">Scores:</span><br/>
+			<div id="Scores">
+				<div class="par_score">Les scores seront actualisés à chaque fois qu'un joueur ajoute son pseudo et finit une partie(qui peut s'achever sur une égalité ou sur une victoire).Le jeu biensûr continue jusqu'à ce que l'on ne puisse plus jouer.</div>
+				<div>            </div>
+				<div class="Les">Les scores:<br/>
+					<IFRAME src="scores_Morpions.txt" width=200 height=70 scrolling=auto frameborder=1 > </IFRAME></div>
+				<div></br></br></br></br></br><a href="#h1"><img src="fleche.jpg" alt="fleche" title="cliquez pour remonter vers le haut"/></a></div>			
+			</div>
+		</p>
+	</body>
+	<footer>
+		<p><div style="inline" class="tex">Contribution des élèves
+			<ul class="en_bas">
+				<li>Nadir</li>
+				<li><div>Guillaume</div> </li>
+				<li>Seif</li>
+				<li>Yvan</li>
+			</ul></div>
+			<div class="im"><img src="CS.png" alt="logo de centrale"/></div>
+			<div class="date">Coding weeks 2018</div></p>
+	</footer>
+</html>0

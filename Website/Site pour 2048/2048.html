@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meca charset="utf-8"/>
+		<link rel="stylesheet" href="style_2048.css"/>
+		<title>Jouez au 2048</title>
+	</head>
+	<header>
+		<h1 id="h1">Jouez au 2048</h1>
+	</header>
+	<body>
+		<figure>
+			<img src="notre_2048.jpg" alt="Notre 2048" title="Voici notre 2048"/>
+			<figcaption>Voici notre 2048</figcaption>
+		</figure>
+		<p><span class="Titre">Principe du jeu:</span><br/>
+			<div id="Principe">
+				<div class="premier"><br/><br/><br/>Le but de ce jeu de grille est d'atteindre par une succession de mouvement vers la droite, le bas, le haut ou la gauche le nombre 2048 dans la grille.</div>
+				<div class="deuxieme"><br/><br/><br/>Pour qu'une opération de mouvement soit réalisable, il faut que deux nombres accolés aient la même valeur pour qu'ils se somment.Par aileurs on part d'une grille remplie partiellement de 2 et/ou de 4.</div>
+				<div><video src="2048.mp4" controls></video></div>
+			</div>
+		</p>
+		<p><span class="Titre">Calcul des scores:</span><br/>
+			<div id = "Calcul">
+				<div class="p">Pour calculer votre score final, l'opération est assez simple. Il suffit de sommer la valeur de toutes les cases qui correspondra à votre nombre de points. Le score n'est calculé que si vous atteignez 2048, sinon le score vaut 0 et vous ne pourrez pas être classé.</div>
+				<div id="photo">
+					<div><img src="Premier_score.png" alt="Premier_score" title="Ici le joueur atteint l'objectif"/></div>
+					<div><img src="Second_score.png" alt="Second_score" title="Ici le joueur n'atteint pas l'objectif"/></div>
+				</div>
+				<div class="p">Dans le premier cas, le joueur atteint l'objectif c'est à dire au moins une case est suprieur ou égale à 2048. Dans ce cas son score est calculé selon le modèle présenté précedemment et ce dernier est de: 4112.<br/>
+				Dans le second cas, le joueur n'atteint pas l'objectif et son score est de 0.</div>
+			</div>
+		</p>
+		<p><span class="Titre">Scores:</span><br/>
+			<div id="Scores">
+				<div class="par_score">Les scores seront actualisés à chaque fois qu'un joueur ajoute son pseudo et finit une partie(qui peut s'achever sur une défaite ou sur une victoire).Le jeu biensûr continue jusqu'à ce que l'on ne puisse plus jouer.</div>
+				<div>            </div>
+				<div class="Les">Les scores:<br/><br/>
+					<IFRAME src="scores_2048.txt" width=200 height=70 scrolling=auto frameborder=1 > </IFRAME></div>
+				<div></br></br></br></br></br><a href="#h1">
+					<figure><img src="fleche.jpg" alt="fleche" title="cliquez pour remonter vers le haut"/></a></div>
+			</div>
+		</p>
+	</body>
+	<footer>
+		<p><div style="inline" class="tex">Contribution des élèves
+			<ul class="en_bas">
+				<li>Nadir</li>
+				<li>Guillaume</li>
+				<li>Seif</li>
+				<li>Yvan</li>
+			</ul></div>
+			<div class="im"><img src="CS.png" alt="logo de centrale"/></div>
+			<div class="date">Coding weeks 2018</div></p>
+	</footer>
+</html>
