@@ -1,7 +1,7 @@
 import grid_2048
 import move_2048
 import ai_2048
-from display import *
+from display_2048 import *
 
 
 
