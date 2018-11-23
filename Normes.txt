@@ -2,7 +2,7 @@
 
 The play function in the main must be named play() and start as following :
 
-from display import *
+from display_[nameofthegame] import *
 import ai_[nameofthegame]
 
 def play():
@@ -28,7 +28,7 @@ Your orders must be written in a file named human_[nameofthegame].py
 Game installation :
 
 - put all your files in a folder (main_[nameofthegame].py and human_[nameofthegame].py at least)
-- launch game_setup.py
+- launch game_setup.py, enter the name of your game
 
 your game is installed, you can launch main_[nameofthegame].py
 
